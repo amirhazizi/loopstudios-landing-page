@@ -7,9 +7,27 @@ html {
     font-size: 15px;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
 /* 
 font-family: 'Alata',
 sans-serif;
 font-family: 'Josefin Sans',
 sans-serif; 
 */
+header {
+    height: 100vh;
+    background: url('../images/mobile/image-hero.jpg') center/cover no-repeat;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.header-h1 {
+
+    /* align-self: center; */
+}

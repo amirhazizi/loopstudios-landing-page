@@ -513,8 +513,59 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-cl_White {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 /* global css */
@@ -523,9 +574,27 @@ html {
   font-size: 15px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Josefin Sans',
+        sans-serif;
+}
+
 /* 
 font-family: 'Alata',
 sans-serif;
 font-family: 'Josefin Sans',
 sans-serif; 
 */
+
+header {
+  height: 100vh;
+  background: url('../images/mobile/image-hero.jpg') center/cover no-repeat;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header-h1 {
+  /* align-self: center; */
+}
