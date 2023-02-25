@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+html {
+    font-size: 15px;
+}
+
+/* 
+font-family: 'Alata',
+sans-serif;
+font-family: 'Josefin Sans',
+sans-serif; 
+*/
