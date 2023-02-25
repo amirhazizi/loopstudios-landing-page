@@ -14,6 +14,11 @@ h3 {
         sans-serif;
 }
 
+ul {
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
 /* 
 font-family: 'Alata',
 sans-serif;
@@ -25,9 +30,4 @@ header {
     background: url('../images/mobile/image-hero.jpg') center/cover no-repeat;
     display: grid;
     grid-template-rows: auto 1fr;
-}
-
-.header-h1 {
-
-    /* align-self: center; */
 }
