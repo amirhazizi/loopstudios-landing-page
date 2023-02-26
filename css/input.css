@@ -9,14 +9,18 @@ html {
 
 h1,
 h2,
-h3 {
-    font-family: 'Josefin Sans',
-        sans-serif;
-}
-
+h3,
 ul {
     font-family: 'Josefin Sans',
         sans-serif;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Alata',
+        sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
 }
 
 /* 
