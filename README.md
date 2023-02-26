@@ -14,9 +14,9 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Screenshot
 
-![screenshot of project](./images/screenshot-1.png)
+![screenshot](./images/screenshot-1.png)
 
-![screenshot of project](./images/screenshot-2.png)
+![screenshot](./images/screenshot-2.png)
 
 ### Live Site
 
