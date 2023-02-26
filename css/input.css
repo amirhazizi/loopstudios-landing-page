@@ -83,9 +83,16 @@ article:hover h3 {
     transition: width 250ms;
 }
 
+/* underline actived */
 .underline-actived {
     width: 1.5rem;
+}
 
+/* scroll bar */
+.scroll-bar::after {
+    background: linear-gradient(to right, #f27f41, #b20a2c);
+    transition: width 100ms;
+    width: var(--width);
 }
 
 /* no scroll body */
