@@ -23,6 +23,12 @@ button {
     letter-spacing: .3rem;
 }
 
+p {
+    font-family: 'Alata',
+        sans-serif;
+    letter-spacing: .05rem;
+}
+
 /* 
 font-family: 'Alata',
 sans-serif;
