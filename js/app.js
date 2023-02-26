@@ -30,3 +30,11 @@ for (const link of links) {
       link.removeChild(link.lastElementChild)
   })
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  new TypeIt("#header-text", {
+    strings: "Immersive experiences that deliver",
+    speed: 50,
+    startDelay: 400,
+  }).go()
+})
