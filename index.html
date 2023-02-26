@@ -17,14 +17,19 @@
   </head>
   <body>
     <!-- header -->
-    <header class="p-5 py-10">
+    <header
+      class="relative p-5 py-10 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-cl_Black after:opacity-25 after:z-10"
+    >
       <!-- navbar -->
-      <nav class="flex justify-between relative z-20">
+      <nav
+        class="flex justify-between relative z-30 container mx-auto max-w-7xl md:p-6 md:px-12"
+      >
         <!-- logo -->
         <img class="h-6" src="./images/logo.svg" alt="logo.svg" />
         <!-- hamburger.icon -->
         <img
           id="hamburger-btn"
+          class="md:hidden"
           src="./images/icon-hamburger.svg"
           alt="icon-hamburger.svg"
         />
@@ -35,21 +40,34 @@
           src="./images/icon-close.svg"
           alt="icon-close.svg"
         />
+        <ul
+          class="hidden md:flex space-x-4 text-white capitalize text-center md:text-xl"
+        >
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
       </nav>
       <!-- header text -->
-      <h1 class="text-5xl text-cl_White border-2 p-4 self-center">
-        Immersive experiences that deliver
-      </h1>
+      <div
+        class="relative self-center container mx-auto max-w-7xl md:p-6 md:px-12 z-20"
+      >
+        <h1 class="text-5xl text-cl_White border-2 p-4 md:max-w-lg lg:text-6xl">
+          Immersive experiences that deliver
+        </h1>
+      </div>
     </header>
     <!-- end of header -->
 
     <!-- submenu -->
     <aside
       id="aside"
-      class="fixed top-0 left-0 grid items-center w-full h-full bg-cl_Black z-10 invisible"
+      class="fixed top-0 left-0 grid items-center w-full h-full bg-cl_Black z-20"
     >
       <!-- links -->
-      <ul class="space-y-4 p-5 text-cl_White text-xl uppercase opacity-75">
+      <ul class="space-y-4 p-5 text-cl_White text-xl uppercase opacity-85">
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Events</a></li>
@@ -60,20 +78,36 @@
     <!-- end of submenu -->
 
     <!-- section 1 -->
-    <section class="px-2 py-20 space-y-10 max-w-sm mx-auto">
+    <section
+      class="px-2 py-20 space-y-10 w-3/4 md:w-fit mx-auto md:flex md:justify-center md:-space-x-32 lg:-space-x-56 md:items-end md:space-y-0 md:max-w-7xl md:h-2/3 md:px-12"
+    >
       <!-- image article -->
-      <article>
+      <article class="md:w-2/3">
+        <!-- small image -->
         <img
+          class="md:hidden"
           src="./images/mobile/image-interactive.jpg"
+          alt="image-interactive.jpg"
+        />
+        <!-- big image -->
+        <img
+          class="section-image hidden md:block"
+          src="./images/desktop/image-interactive.jpg"
           alt="image-interactive.jpg"
         />
       </article>
       <!-- text article -->
-      <article class="text-center space-y-4 bg-cl_White">
+      <article
+        class="text-center space-y-5 bg-cl_White md:text-left md:p-5 lg:p-10 xl:p-20 md:pb-0 md:max-w-xl lg:max-w-2xl"
+      >
         <!-- header -->
-        <h2 class="text-3xl leading-7">The leader in interactive VR</h2>
+        <h2 class="text-3xl leading-7 lg:text-4xl xl:text-5xl">
+          The leader in interactive VR
+        </h2>
         <!-- text -->
-        <p class="text-sm text-cl_VeryDarkGray max-w-xs leading-6 mx-auto px-5">
+        <p
+          class="text-sm text-cl_VeryDarkGray max-w-xs leading-6 mx-auto px-5 md:max-w-md xl:max-w-2xl md:px-0 md:mx-0"
+        >
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best companies around the globe. Our
           award-winning creations have transformed businesses through digital
@@ -84,19 +118,23 @@
     <!-- end of section 1 -->
 
     <!-- section 2 -->
-    <section class="max-w-sm mx-auto px-2 space-y-10 mb-20">
-      <div class="md:flex justify-between">
-        <h2 class="text-center text-3xl">Our creations</h2>
+    <section
+      class="w-3/4 md:w-fit mx-auto px-2 space-y-10 mb-20 md:max-w-7xl md:space-y-16 md:px-12 md:py-24"
+    >
+      <div class="md:flex md:justify-between md:w-full">
+        <h2 class="text-center text-3xl md:text-5xl">Our creations</h2>
         <button
-          class="md:block hidden text-center mx-auto x p-2 px-10 border-2 border-cl_Black"
+          class="md:inline-block hidden text-center x p-2 px-10 border-2 border-cl_Black"
         >
           See all
         </button>
       </div>
-      <div class="space-y-6">
+      <div
+        class="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-4 md:space-y-0 md:gap-x-3 md:gap-y-5 lg:gap-x-7"
+      >
         <!-- deep earth -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -111,7 +149,7 @@
             alt="image-deep-earth.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             Deep <br />
             earth
@@ -120,7 +158,7 @@
         <!-- end of deep earth -->
         <!-- Night arcade -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -135,7 +173,7 @@
             alt="image-night-arcade.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             Night <br />
             arcade
@@ -144,7 +182,7 @@
         <!-- end of Night arcade -->
         <!-- Soccer team -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -159,7 +197,7 @@
             alt="image-soccer-team.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             Soccer <br />
             team VR
@@ -168,7 +206,7 @@
         <!-- end of Soccer team -->
         <!-- The grid -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -183,7 +221,7 @@
             alt="image-grid.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             The <br />
             grid
@@ -192,7 +230,7 @@
         <!-- end of The grid -->
         <!-- From up above VR -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -207,7 +245,7 @@
             alt="image-from-above.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             From up <br />
             above VR
@@ -216,7 +254,7 @@
         <!-- end of From up above VR -->
         <!-- Pocket borealis -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -231,7 +269,7 @@
             alt="image-pocket-borealis.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             Pocket<br />
             borealis
@@ -240,7 +278,7 @@
         <!-- end of Pocket borealis -->
         <!-- The curiosity -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -255,7 +293,7 @@
             alt="image-curiosity.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             The <br />
             curiosity
@@ -264,7 +302,7 @@
         <!-- end of The curiosity -->
         <!-- Make it fisheye -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden"
+          class="relative after:absolute after:w-1/2 after:h-full after:bg-cl_Black after:blur-3xl after:bottom-0 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-60"
         >
           <!-- small screen img -->
           <img
@@ -279,7 +317,7 @@
             alt="image-fisheye.jpg"
           />
           <h3
-            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-1/2 w-full opacity-95 z-10"
+            class="absolute text-cl_White leading-8 bottom-4 left-6 text-3xl h-fit w-fit opacity-95 z-10 md:bottom-8 md:left-10"
           >
             Make it<br />
             fisheye
@@ -296,58 +334,71 @@
     <!-- end of section 2 -->
 
     <!-- footer -->
-    <footer class="bg-cl_Black py-10 space-y-10">
-      <div class="flex flex-col items-center space-y-8">
-        <!-- logo -->
-        <img class="w-36" src="./images/logo.svg" alt="" />
-        <!-- links -->
-        <ul class="grid gap-3 text-white capitalize text-center">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </div>
-      <div class="space-y-5">
-        <!-- social medias -->
-        <ul class="flex justify-center space-x-4">
-          <!-- facebook -->
-          <li>
-            <a href="#">
-              <img src="./images/icon-facebook.svg" alt="icon-facebook.svg" />
-            </a>
-          </li>
-          <!-- end of facebook -->
+    <footer class="bg-cl_Black py-10">
+      <div
+        class="space-y-10 md:flex md:justify-between md:space-y-0 md:max-w-7xl mx-auto md:px-12"
+      >
+        <div class="flex flex-col items-center space-y-8 md:items-start">
+          <!-- logo -->
+          <img class="w-36" src="./images/logo.svg" alt="" />
+          <!-- links -->
+          <ul
+            class="flex flex-col gap-3 text-white capitalize text-center md:flex-row md:gap-x-5"
+          >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="space-y-5 md:space-y-8">
+          <!-- social medias -->
+          <ul class="flex justify-center space-x-4 md:justify-end">
+            <!-- facebook -->
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="icon-facebook.svg" />
+              </a>
+            </li>
+            <!-- end of facebook -->
 
-          <!-- twitter -->
-          <li>
-            <a href="#">
-              <img src="./images/icon-twitter.svg" alt="icon-twitter.svg" />
-            </a>
-          </li>
-          <!-- end of twitter -->
+            <!-- twitter -->
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt="icon-twitter.svg" />
+              </a>
+            </li>
+            <!-- end of twitter -->
 
-          <!-- pinterest -->
-          <li>
-            <a href="#">
-              <img src="./images/icon-pinterest.svg" alt="icon-pinterest.svg" />
-            </a>
-          </li>
-          <!-- end of pinterest -->
+            <!-- pinterest -->
+            <li>
+              <a href="#">
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt="icon-pinterest.svg"
+                />
+              </a>
+            </li>
+            <!-- end of pinterest -->
 
-          <!-- instagram -->
-          <li>
-            <a href="#">
-              <img src="./images/icon-instagram.svg" alt="icon-instagram.svg" />
-            </a>
-          </li>
-          <!-- end of instagram -->
-        </ul>
-        <!-- footer copyright -->
-        <p class="text-cl_DarkGray text-center text-sm">
-          © <span id="footer-date">2021</span> Loopstudios. All rights reserved.
-        </p>
+            <!-- instagram -->
+            <li>
+              <a href="#">
+                <img
+                  src="./images/icon-instagram.svg"
+                  alt="icon-instagram.svg"
+                />
+              </a>
+            </li>
+            <!-- end of instagram -->
+          </ul>
+          <!-- footer copyright -->
+          <p class="text-cl_DarkGray text-center text-sm">
+            © <span id="footer-date">2021</span> Loopstudios. All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
     <!-- end of footer -->
