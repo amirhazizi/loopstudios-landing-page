@@ -37,11 +37,11 @@
         <ul
           class="hidden md:flex space-x-4 text-white capitalize text-center md:text-xl"
         >
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
+          <li><a class="link relative" href="#">About</a></li>
+          <li><a class="link relative" href="#">Careers</a></li>
+          <li><a class="link relative" href="#">Events</a></li>
+          <li><a class="link relative" href="#">Products</a></li>
+          <li><a class="link relative" href="#">Support</a></li>
         </ul>
       </nav>
       <!-- header text -->
@@ -117,7 +117,7 @@
       <div class="md:flex md:justify-between md:w-full">
         <h2 class="text-center text-3xl md:text-5xl">Our creations</h2>
         <button
-          class="md:inline-block hidden text-center x p-2 px-10 border-2 border-cl_Black"
+          class="md:inline-block hidden text-center x p-2 px-10 border-2 border-cl_Black transition-all hover:bg-black hover:text-white"
         >
           See all
         </button>
@@ -125,33 +125,35 @@
       <div
         class="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-4 md:space-y-0 md:gap-x-3 md:gap-y-5 lg:gap-x-7"
       >
-        <!-- deep earth -->
-        <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
-        >
-          <!-- small screen img -->
-          <img
-            class="md:hidden"
-            src="./images/mobile/image-deep-earth.jpg"
-            alt="image-deep-earth.jpg"
-          />
-          <!-- big screen img -->
-          <img
-            class="hidden md:block"
-            src="./images/desktop/image-deep-earth.jpg"
-            alt="image-deep-earth.jpg"
-          />
-          <h3
-            class="absolute text-cl_White leading-6 bottom-5 left-5 text-2xl h-fit w-fit opacity-75 z-10 md:bottom-8 md:left-10 md:text-4xl md:leading-9"
+        <a href="#">
+          <!-- deep earth -->
+          <article
+            class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
           >
-            Deep <br />
-            earth
-          </h3>
-        </article>
+            <!-- small screen img -->
+            <img
+              class="md:hidden"
+              src="./images/mobile/image-deep-earth.jpg"
+              alt="image-deep-earth.jpg"
+            />
+            <!-- big screen img -->
+            <img
+              class="hidden md:block"
+              src="./images/desktop/image-deep-earth.jpg"
+              alt="image-deep-earth.jpg"
+            />
+            <h3
+              class="absolute text-cl_White leading-6 bottom-5 left-5 text-2xl h-fit w-fit opacity-75 z-10 md:bottom-8 md:left-10 md:text-4xl md:leading-9"
+            >
+              Deep <br />
+              earth
+            </h3>
+          </article>
+        </a>
         <!-- end of deep earth -->
         <!-- Night arcade -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -175,7 +177,7 @@
         <!-- end of Night arcade -->
         <!-- Soccer team -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -199,7 +201,7 @@
         <!-- end of Soccer team -->
         <!-- The grid -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -223,7 +225,7 @@
         <!-- end of The grid -->
         <!-- From up above VR -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -247,7 +249,7 @@
         <!-- end of From up above VR -->
         <!-- Pocket borealis -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -271,7 +273,7 @@
         <!-- end of Pocket borealis -->
         <!-- The curiosity -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -295,7 +297,7 @@
         <!-- end of The curiosity -->
         <!-- Make it fisheye -->
         <article
-          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75"
+          class="relative after:absolute after:w-1/2 after:h-2/3 after:bg-cl_Black after:blur-3xl after:-bottom-3 after:-left-2 overflow-hidden md:after:h-1/3 md:after:w-full md:after:opacity-75 after:transition-all hover:after:w-full hover:after:h-full hover:after:bg-cl_White hover:after:opacity-75 hover:after:blur-0 hover:after:left-0 hover:after:bottom-0"
         >
           <!-- small screen img -->
           <img
@@ -319,7 +321,7 @@
         <!-- end of Make it fisheye -->
       </div>
       <button
-        class="block md:hidden text-center mx-auto x p-2 px-10 border-2 border-cl_Black"
+        class="block md:hidden text-center mx-auto x p-2 px-10 border-2 border-cl_Black transition-all hover:bg-black hover:text-white"
       >
         See all
       </button>
@@ -338,11 +340,11 @@
           <ul
             class="flex flex-col gap-3 text-white capitalize text-center md:flex-row md:gap-x-5"
           >
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a class="link relative" href="#">About</a></li>
+            <li><a class="link relative" href="#">Careers</a></li>
+            <li><a class="link relative" href="#">Events</a></li>
+            <li><a class="link relative" href="#">Products</a></li>
+            <li><a class="link relative" href="#">Support</a></li>
           </ul>
         </div>
         <div class="space-y-5 md:space-y-8">
@@ -350,7 +352,7 @@
           <ul class="flex justify-center space-x-4 md:justify-end">
             <!-- facebook -->
             <li>
-              <a href="#">
+              <a class="link relative" href="#">
                 <img src="./images/icon-facebook.svg" alt="icon-facebook.svg" />
               </a>
             </li>
@@ -358,7 +360,7 @@
 
             <!-- twitter -->
             <li>
-              <a href="#">
+              <a class="link relative" href="#">
                 <img src="./images/icon-twitter.svg" alt="icon-twitter.svg" />
               </a>
             </li>
@@ -366,7 +368,7 @@
 
             <!-- pinterest -->
             <li>
-              <a href="#">
+              <a class="link relative" href="#">
                 <img
                   src="./images/icon-pinterest.svg"
                   alt="icon-pinterest.svg"
@@ -377,7 +379,7 @@
 
             <!-- instagram -->
             <li>
-              <a href="#">
+              <a class="link relative" href="#">
                 <img
                   src="./images/icon-instagram.svg"
                   alt="icon-instagram.svg"
