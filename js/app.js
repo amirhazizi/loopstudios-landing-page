@@ -25,10 +25,10 @@ closeBtn.addEventListener("click", () => {
 // scroll bar scroll event
 window.addEventListener("scroll", () => {
   const post = window.scrollY
-  const bodyHeight = document.body.getBoundingClientRect().height
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight
   document.body.style.setProperty(
     "--width",
-    `${Math.ceil((post / bodyHeight) * 100)}%`
+    `${Math.ceil((post / scrollable) * 100)}%`
   )
 })
 
